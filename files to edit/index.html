@@ -311,33 +311,32 @@
     <section class="matric-dance-specials">
       <div class="header">
         <h2>Matric Dance Specials</h2>
-        <!-- <p>Be the Star of Your Big Day</p> -->
+        <p>From R300 - R1000</p>
       </div>
       <div class="specials-container">
         <article class="special-article">
-          <img src="brazilian_weave.jpg" />
+          <img src="Matric Specials Images/friends combo.jpg" />
 
           <div class="special-info">
-            <h3 class="special-name">Friends Combo</h3>
-            <span class="special-price">R300 - R600</span>
+            <h4 class="special-name">BFF Hair Glam</h4>
           </div>
         </article>
 
         <article class="special-article">
-          <img src="classic_nail_art.jpg" />
+          <img
+            src="Matric Specials Images/WhatsApp Image 2025-09-30 at 3.03.51 PM.jpeg"
+          />
 
           <div class="special-info">
-            <h3 class="special-name">Manicure + Pedicure</h3>
-            <span class="special-price">R300 - R600</span>
+            <h4 class="special-name">Mani + Pedi</h4>
           </div>
         </article>
 
         <article class="special-article">
-          <img src="hairstyle10.jpg" />
+          <img src="Matric Specials Images/glamwithpartner.jpg" />
 
           <div class="special-info">
-            <h3 class="special-name">Discounted Hairstyle</h3>
-            <span class="special-price">R300 - R600</span>
+            <h4 class="special-name">His & Hers</h4>
           </div>
         </article>
       </div>
@@ -348,7 +347,13 @@
         margin: 50px;
       }
 
+      .matric-dance-specials p {
+        text-align: center;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+
       .specials-container {
+        height: 450px;
         display: flex;
         margin-top: 20px;
       }
@@ -376,33 +381,59 @@
         box-shadow: 5px 5px 10px gray;
       }
 
-      @media (max-width: 1024px) {
-        .matric-dance-specials {
-          margin: 10px;
-        }
+      .special-name,
+      .special-price {
+        margin-bottom: 0px;
+        text-align: center;
+        text-shadow: 1px 1px 2px black, 0 0 25px maroon, 0 0 5px darkblue;
       }
 
-      /* @media (max-width: 767px) {
+      @media (max-width: 600px) {
         .specials-container {
-          display: flex;
-          flex-direction: column;
-          margin-top: 20px;
+          position: relative;
+          height: auto;
         }
 
         .specials-container article {
           margin-right: 20px;
           border-radius: 10px;
-          width: 1010px;
+          width: 100px;
         }
 
         .specials-container article img {
           width: 100%;
-          height: 80%;
+          height: 100%;
           object-fit: cover;
           border-radius: 5px;
           box-shadow: 5px 5px 10px gray;
         }
-      } */
+
+        .special-info {
+          position: absolute;
+          bottom: 25px;
+          /* height: 50px; */
+          width: 60px;
+          background-color: transparent;
+          box-shadow: none;
+          padding: 0;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .matric-dance-specials {
+          margin: 10px;
+        }
+
+        .specials-container {
+          height: 250px;
+          margin-bottom: 50px;
+        }
+
+        .special-name {
+          margin-bottom: 0px;
+          margin-top: 0px;
+        }
+      }
     </style>
 
     <!-- Featured Hairstyles Section -->
